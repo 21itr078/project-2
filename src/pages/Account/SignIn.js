@@ -25,7 +25,7 @@ function SigninForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/api/signin', formData);
+      const response = await axios.post('https://eyesee-opticals-backend.onrender.com/api/signin', formData);
 
       if (response.status === 200) {
         // Handle successful sign-in
@@ -33,7 +33,7 @@ function SigninForm() {
         setError('');
 
         // Redirect to the home page after successful login
-        localStorage.setItem('userEmail',formData.email);
+        localStorage.setItem('userEmail', formData.email);
         history('/');
       } else {
         setError('Unexpected response from the server');
