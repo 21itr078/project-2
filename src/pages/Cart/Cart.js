@@ -6,6 +6,7 @@ import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 import { resetCart } from "../../redux/orebiSlice";
 import { emptyCart } from "../../assets/images/index";
 import ItemCard from "./ItemCard";
+import AddressSelection from "./AddressSelection";
 
 const Cart = () => {
   const dispatch = useDispatch();
@@ -29,6 +30,8 @@ const Cart = () => {
       setShippingCharge(20);
     }
   }, [totalAmt]);
+
+  
   return (
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs title="Cart" />
@@ -68,6 +71,8 @@ const Cart = () => {
             </div>
             <p className="text-lg font-semibold">Update Cart</p>
           </div>
+          <br></br>
+          <AddressSelection/>
           <div className="max-w-7xl gap-4 flex justify-end mt-4">
             <div className="w-96 flex flex-col gap-4">
               <h1 className="text-2xl font-semibold text-right">Cart totals</h1>

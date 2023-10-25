@@ -6,6 +6,7 @@ import Flex from "../../designLayouts/Flex";
 import { Link, useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { paginationItems } from "../../../constants";
+import LogoutButton from "./LogoutButton";
 
 const HeaderBottom = () => {
   const products = useSelector((state) => state.orebiReducer.products);
@@ -130,6 +131,7 @@ const HeaderBottom = () => {
           </div>
           <div>
             {localStorage.getItem('userEmail')}
+            
           </div>
           <div className="flex gap-4 mt-2 lg:mt-0 items-center pr-6 cursor-pointer relative">
             <div onClick={() => setShowUser(!showUser)} className="flex">
@@ -167,6 +169,8 @@ const HeaderBottom = () => {
                 </span>
               </div>
             </Link>
+            <br></br>
+            <LogoutButton/>
           </div>
         </Flex>
       </div>
