@@ -51,6 +51,19 @@ function SignupForm() {
         {successMessage && <p className="text-green-500 text-xs italic text-center mb-4">{successMessage}</p>}
         {error && <p className="text-red-500 text-xs italic text-center mb-4">{error}</p>}
         <div className="mb-4">
+          <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+            Name
+          </label>
+          <input
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            id="name"
+            type="name"
+            name="name"
+            placeholder="Name"
+           
+          />
+          </div>
+        <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email
           </label>
