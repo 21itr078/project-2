@@ -2,7 +2,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
-import imge from '../paay.png'; // Update the image path if needed
+import imge from '../paym.jpg'; // Update the image path if needed
 
 const Payment = () => {
   return (
