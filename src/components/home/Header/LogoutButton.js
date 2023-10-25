@@ -23,6 +23,9 @@ const LogoutButton = () => {
     // Set the flag to indicate that the user should be redirected
     setShouldRedirect(true);
 
+    // Reload the page after logout
+    window.location.reload();
+
     // You can also perform additional logout actions here if needed
   };
 
@@ -38,7 +41,6 @@ const LogoutButton = () => {
     </button>
   ) : (
     <div>
-      
       <button className="bg-red-500 text-white px-4 py-2 rounded-md" onClick={handleLogout}>
         Logout
       </button>
