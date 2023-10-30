@@ -15,7 +15,7 @@ const SpecialCase = () => {
 
             <MdSwitchAccount className="text-2xl -translate-x-3 group-hover:translate-x-12 transition-transform duration-200" />
           </div>
-          <p className="text-xs font-semibold font-titleFont">Profile</p>
+          <p className="text-xs font-semibold font-titleFont">SignIn</p>
         </div>
       </Link>
       <Link to="/cart">
