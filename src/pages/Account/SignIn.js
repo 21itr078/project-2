@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom'; // Import Link and useHistory from react-router-dom
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 function SigninForm() {
@@ -10,8 +10,9 @@ function SigninForm() {
 
   const [error, setError] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false); // State for loading popup
 
-  const history = useNavigate(); // Get the history object for navigation
+  const history = useNavigate();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -24,24 +25,30 @@ function SigninForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    setIsLoading(true); // Show loading popup
+
     try {
       const response = await axios.post('https://eyesee-opticals-backend.onrender.com/api/signin', formData);
 
       if (response.status === 200) {
-        // Handle successful sign-in
-        setSuccessMessage('Sign-in successful!');
+        setSuccessMessage('Sign-in successful');
         setError('');
-
-        // Redirect to the home page after successful login
         localStorage.setItem('userEmail', formData.email);
-        history('/');
+
+        // Simulate loading for 2 seconds before redirecting
+        setTimeout(() => {
+          setIsLoading(false); // Hide loading popup
+          history('/');
+        }, 2000);
       } else {
         setError('Unexpected response from the server');
         setSuccessMessage('');
+        setIsLoading(false); // Hide loading popup
       }
     } catch (err) {
       setError(err.response.data.error || 'An error occurred');
       setSuccessMessage('');
+      setIsLoading(false); // Hide loading popup
     }
   };
 
@@ -51,6 +58,7 @@ function SigninForm() {
         <h1 className="text-2xl font-semibold text-center mb-6">Sign In</h1>
         {successMessage && <p className="text-green-500 text-xs italic text-center mb-4">{successMessage}</p>}
         {error && <p className="text-red-500 text-xs italic text-center mb-4">{error}</p>}
+        {isLoading && <p className="text-blue-500 text-xs italic text-center mb-4">Loading...</p>} 
         <div className="mb-4">
           <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
             Email
@@ -88,7 +96,6 @@ function SigninForm() {
           </button>
         </div>
       </form>
-      {/* Create Account Button */}
       <div className="text-center">
         <p>Don't have an account? <Link to="/signup" className="text-blue-500">Create Account</Link></p>
       </div>

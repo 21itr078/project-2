@@ -8,7 +8,7 @@ const Category = () => {
   const items = [
     {
       _id: 990,
-      title: "New Arrivals",
+      title: "Sports Glasses",
       icons: true,
     },
     {
@@ -24,14 +24,11 @@ const Category = () => {
       _id: 993,
       title: "Reading glass",
     },
-    {
-      _id: 994,
-      title: "Others",
-    },
+    
   ];
   return (
     <div className="w-full">
-      <NavTitle title="Shop by Category" icons={false} />
+      <NavTitle title="Category" icons={false} />
       <div>
         <ul className="flex flex-col gap-4 text-sm lg:text-base text-[#767676]">
           {items.map(({ _id, title, icons }) => (
@@ -45,7 +42,7 @@ const Category = () => {
                   onClick={() => setShowSubCatOne(!showSubCatOne)}
                   className="text-[10px] lg:text-xs cursor-pointer text-gray-400 hover:text-primeColor duration-300"
                 >
-                  <ImPlus />
+                  
                 </span>
               )}
             </li>

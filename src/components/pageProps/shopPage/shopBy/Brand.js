@@ -30,7 +30,7 @@ const Brand = ({ products, setFilteredProducts }) => {
   return (
     <div>
       <div className="cursor-pointer">
-        <NavTitle title="Shop by Brand" icons={true} />
+        <NavTitle title="Popular Brands" icons={true} />
       </div>
       <motion.div
         initial={{ y: -20, opacity: 0 }}
