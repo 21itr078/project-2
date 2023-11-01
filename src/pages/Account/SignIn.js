@@ -89,14 +89,22 @@ function SigninForm() {
         </div>
         <div className="flex items-center justify-between">
           <button
-            className="bg-blue-500 hover-bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
             type="submit"
           >
             Sign In
           </button>
         </div>
       </form>
+      
       <div className="text-center">
+        
+        <button
+          onClick={() => history('/')}
+          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+        >
+          Back to Home
+        </button>
         <p>Don't have an account? <Link to="/signup" className="text-blue-500">Create Account</Link></p>
       </div>
     </div>

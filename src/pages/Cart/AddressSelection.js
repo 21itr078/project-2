@@ -1,48 +1,87 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-const AddressSelection = () => {
-  const [selectedAddress, setSelectedAddress] = useState(null);
+function AddressForm() {
+  const [formData, setFormData] = useState({
+    streetAddress: '',
+    city: '',
+    state: '',
+    postalCode: '',
+  });
 
-  const addresses = [
-    { id: 1, address: "123 Main Street, City, Country" },
-    { id: 2, address: "456 Elm Street, City, Country" },
-    { id: 3, address: "789 Oak Street, City, Country" },
-  ];
-
-  const handleAddressChange = (addressId) => {
-    setSelectedAddress(addressId);
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
   };
 
   return (
-    <div className="p-4 bg-white rounded-md shadow-lg">
-      <h2 className="text-2xl font-semibold mb-4">Select Address</h2>
-      <div>
-        {addresses.map((address) => (
-          <div key={address.id} className="mb-2">
-            <label className="flex items-center">
-              <input
-                type="radio"
-                name="address"
-                value={address.id}
-                checked={selectedAddress === address.id}
-                onChange={() => handleAddressChange(address.id)}
-                className="mr-2 form-radio text-blue-500"
-              />
-              {address.address}
-            </label>
-          </div>
-        ))}
-      </div>
-      {selectedAddress !== null && (
-        <div className="mt-4">
-          <p>
-            Selected Address:{" "}
-            {addresses.find((address) => address.id === selectedAddress).address}
-          </p>
+    <div className="w-1/2 mx-auto mt-8">
+      <form className="bg-white p-8 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-bold mb-4">Address Information</h2>
+
+        <div className="mb-4">
+          <label htmlFor="streetAddress" className="block text-lg font-medium text-gray-800">
+            Street Address
+          </label>
+          <input
+            type="text"
+            id="streetAddress"
+            name="streetAddress"
+            value={formData.streetAddress}
+            onChange={handleChange}
+            className="form-input w-full py-2 px-3 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:border-blue-500"
+            required
+          />
         </div>
-      )}
+
+        <div className="mb-4">
+          <label htmlFor="city" className="block text-lg font-medium text-gray-800">
+            City
+          </label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            value={formData.city}
+            onChange={handleChange}
+            className="form-input w-full py-2 px-3 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="state" className="block text-lg font-medium text-gray-800">
+            State
+          </label>
+          <input
+            type="text"
+            id="state"
+            name="state"
+            value={formData.state}
+            onChange={handleChange}
+            className="form-input w-full py-2 px-3 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="postalCode" className="block text-lg font-medium text-gray-800">
+            Pin Code
+          </label>
+          <input
+            type="text"
+            id="postalCode"
+            name="postalCode"
+            value={formData.postalCode}
+            onChange={handleChange}
+            className="form-input w-full py-2 px-3 border border-gray-300 rounded-md text-gray-700 focus:outline-none focus:border-blue-500"
+            required
+          />
+        </div>
+
+        <p className="text-gray-600 text-sm mt-2">Your address information will be kept confidential.</p>
+      </form>
     </div>
   );
-};
+}
 
-export default AddressSelection;
+export default AddressForm;
