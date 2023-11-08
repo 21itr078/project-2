@@ -13,10 +13,8 @@ const Journal = () => {
       <Breadcrumbs title="Journals" prevLocation={prevLocation} />
       <div className="pb-10">
         <h1 className="max-w-[600px] text-base text-lightText mb-2">
-          <span className="text-primeColor font-semibold text-lg">EyeSee</span>{" "}
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
-          reiciendis delectus vitae, aliquid sit iure dolorum commodi eum
-          numquam voluptate!
+          <span className="text-primeColor font-semibold text-lg">Book Haven</span>{" "}
+          If you are looking for a perfect marketplace to showcase your story-writing skills and sell ebooks, and novels online, Book Haven is the right platform for you. Book Haven, the world’s no.1 e-commerce platform, offers best-selling books, new releases, and classics in every category, whatever you are looking for – fiction, cookbooks, mystery, romance, thriller, history, entrepreneurship, or books for kids.
         </h1>
         <Link to="/shop">
           <button className="w-52 h-10 bg-primeColor text-white hover:bg-black duration-300">

@@ -34,12 +34,11 @@ const Footer = () => {
           <FooterListTitle title=" More about  Shop" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim sint
-              ab ullam, numquam nesciunt in.
+            Book Haven- If you are looking for a perfect marketplace to showcase your story-writing skills and sell ebooks, and novels online, Book Haven is the right platform for you. 
             </p>
             <ul className="flex items-center gap-2">
               <a
-                href=""
+                href="/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -81,19 +80,19 @@ const Footer = () => {
           <FooterListTitle title="Shop" />
           <ul className="flex flex-col gap-2">
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              sunglasses
+              Fiction
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              compuerglass
+              Non-Fiction
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              power glasses
+              Adventure
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              sports
+              Romance
             </li>
             <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
-              New Arrivals
+              Comedy
             </li>
           </ul>
         </div>

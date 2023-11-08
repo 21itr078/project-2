@@ -54,55 +54,61 @@ const NewArrivals = () => {
           <Product
             _id="100001"
             img={newArrOne}
-            productName="Specsmakers Happster Unisex Eyeglasses"
-            price="1500"
-            color="Black"
+            productName="The Wise Man's Fear"
+            price="500"
+            color="Fantasy Novel"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.”
+
+            My name is Kvothe.
+            I have stolen princesses back from sleeping barrow kings. I burned down the town of Trebon. I have spent the night with Felurian and left with both my sanity and my life. I was expelled from the University at a younger age than most people are allowed in. I tread paths by moonlight that others fear to speak of during day. I have talked to Gods, loved women, and written songs that make the minstrels weep."
           />
         </div>
         <div className="px-2">
           <Product
             _id="100002"
             img={newArrTwo}
-            productName="Signa Unisex Eyeglasses"
-            price="1500"
-            color="Black"
+            productName="Percy Jackson: Sea of Monsters"
+            price="150"
+            color="Adventure/Fantasy"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Though Percy (Logan Lerman), the half-human son of Greek god Poseidon, once saved the world, lately he's been feeling less than heroic. However, he doesn't have much time to brood -- the enchanted borders that protect Camp Half-Blood are dissolving, and a horde of mythical beasts threatens the demigods' sanctuary. In order to save Camp Half-Blood, Percy and his friends embark on a journey to the Sea of Monsters -- aka the Bermuda Triangle -- to find the magical Golden Fleece."
           />
         </div>
         <div className="px-2">
           <Product
             _id="100003"
             img={newArrThree}
-            productName="cloth BaskSigna Unisex Eyeglasses"
-            price="1800"
-            color="Mixed"
+            productName="Three Men in a Boat"
+            price="1500"
+            color="Comedy novel"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="We agree that we are overworked, and need a rest - A week on the rolling deep? - George suggests the river - And with the co-operation of several hampers of food and a covered boat, the three men (not forgetting the dog) set out on a hilarious voyage of mishaps up the Thames. When not falling in the river and getting lost in Hampton Court Maze, Jerome K. Jerome finds time to express his ideas on the world around - many of which have acquired a deeper fascination since the day at the end of the 19th century when this excursion was so lightly undertaken."
           />
         </div>
         <div className="px-2">
           <Product
             _id="100004"
             img={newArrFour}
-            productName="Signa Unisex Eyeglasses Fullframe Pilot "
-            price="2000"
-            color="Mixed"
+            productName="Bret Easton Ellis "
+            price="2050"
+            color="Transgressive fiction"
             badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Bret Easton Ellis’s masterful new novel is a story about the end of innocence, and the perilous passage from adolescence into adulthood, set in a vibrantly fictionalized Los Angeles in 1981 as a serial killer begins targeting teenagers throughout the city."
           />
         </div>
         <div className="px-2">
           <Product
             _id="100005"
-            img={newArrTwo}
-            productName="reading glass"
+            img={newArrOne}
+            productName="The Wise Man's Fear"
             price="1200"
             color="Mixed"
             badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="There are three things all wise men fear: the sea in storm, a night with no moon, and the anger of a gentle man.”
+
+            My name is Kvothe.
+            I have stolen princesses back from sleeping barrow kings. I burned down the town of Trebon. I have spent the night with Felurian and left with both my sanity and my life. I was expelled from the University at a younger age than most people are allowed in. I tread paths by moonlight that others fear to speak of during day. I have talked to Gods, loved women, and written songs that make the minstrels weep."
           />
         </div>
       </Slider>

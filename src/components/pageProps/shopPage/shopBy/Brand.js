@@ -4,11 +4,11 @@ import NavTitle from "./NavTitle";
 
 const Brand = ({ products, setFilteredProducts }) => {
   const brands = [
-    "Lenscart",
-    "Titan",
-    "Fastrack",
-    "SPeter Jones",
-    "Ray-Ban",
+    "The Alchemist",
+    "Sapiens",
+    "Untamed",
+    "Beloved",
+    "Principles",
   ];
 
   const [selectedBrand, setSelectedBrand] = useState(null);
@@ -30,7 +30,7 @@ const Brand = ({ products, setFilteredProducts }) => {
   return (
     <div>
       <div className="cursor-pointer">
-        <NavTitle title="Popular Brands" icons={true} />
+        <NavTitle title="Popular Books" icons={true} />
       </div>
       <motion.div
         initial={{ y: -20, opacity: 0 }}

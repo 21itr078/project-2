@@ -32,8 +32,8 @@ const Header = () => {
         <Flex className="flex items-center justify-between h-full">
           <Link to="/">
             <a href="" class="flex items-center">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWep1JXbBU5kRVJFs2cDgMWsDsFIq0FxO-AA&usqp=CAU" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
-                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">EyeSee Opticals</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKBoItbVGdyuwyZx6eMRRxr4Q1z8UUy1QkJdcI5VRExL1wvw9J0HWacVaeFWlElNx5_IA&usqp=CAU" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo" />
+                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-black">Book Heaven</span>
             </a>
           </Link>
           <div>
