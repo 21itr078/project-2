@@ -28,7 +28,7 @@ function SigninForm() {
     setIsLoading(true); // Show loading popup
 
     try {
-      const response = await axios.post('http://https://backend2-l22h.onrender.com/api/signin', formData);
+      const response = await axios.post('https://backend2-l22h.onrender.com/api/signin', formData);
 
       if (response.status === 200) {
         setSuccessMessage('Sign-in successful');
