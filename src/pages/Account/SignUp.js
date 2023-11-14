@@ -25,7 +25,7 @@ function SignupForm() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('https://backend2-l22h.onrender.com/api/signup', formData);
+      const response = await axios.post('https://eyesee-opticals-backend.onrender.com/api/signup', formData);
 
       if (response.status === 201) {
         // Handle successful sign-up
