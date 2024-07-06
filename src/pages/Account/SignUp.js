@@ -99,6 +99,18 @@ function SignupForm() {
             Sign Up
           </button>
         </div>
+        <div className="w-full max-w-md mx-auto mt-12 text-center">
+      <h1 className="text-2xl font-semibold mb-6">Welcome to Your App</h1>
+      <Link to="/signup" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+        Sign Up
+      </Link>
+      <Link to="/signin" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2">
+        Sign In
+      </Link>
+      <a href="http://localhost:5000/auth/google" className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+        Sign In with Google
+      </a>
+    </div>
       </form>
     </div>
   );
